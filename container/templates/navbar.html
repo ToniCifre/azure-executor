@@ -1,0 +1,60 @@
+{##}
+{#<nav class="navbar navbar-expand-lg navbar-light bg-light">#}
+{#  <a class="navbar-brand" href="#">Navbar</a>#}
+{#  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">#}
+{#    <span class="navbar-toggler-icon"></span>#}
+{#  </button>#}
+{##}
+{#  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">#}
+{#    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">#}
+{#      <li class="nav-item active">#}
+{#        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+{#      </li>#}
+{#      <li class="nav-item">#}
+{#        <a class="nav-link" href="#">Link</a>#}
+{#      </li>#}
+{#        <li class="nav-item">#}
+{#        <a class="nav-link" href="#">Link</a>#}
+{#      </li>#}
+{#        <li class="nav-item">#}
+{#        <a class="nav-link" href="#">Link</a>#}
+{#      </li>#}
+{#    </ul>#}
+{#      <a class="btn btn-outline-info btn-sm" role="button" href= "{{ url_for('logout') }}">LOG OUT</a>#}
+{#  </div>#}
+{#</nav>#}
+
+
+
+
+
+<nav>
+<div class="nav-wrapper indigo darken-4">
+  <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+  <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <ul class="right hide-on-med-and-down">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <!-- Dropdown Trigger -->
+    <li><a class="dropdown-trigger" href="#!" data-target="dropdownMenu"><i class="material-icons">more_vert</i></a></li>
+  </ul>
+</div>
+</nav>
+
+<!-- mobile Structure -->
+<ul class="sidenav" id="mobile-nav">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li class="divider"></li>
+    <li><a href="mobile.html">Mobile</a></li>
+</ul>
+
+<!-- Dropdown Structure -->
+<ul id="dropdownMenu" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
