@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="main">
+    <div class="title">
+        <h3>Login</h3>
+    </div>
+
+
+            <form action="/login" method="post" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" name="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Invalid email." data-success="right">Helper text</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+
+                {% if error is defined %}
+                    <p class="red-text text-darken-2">{{ error }}</p>
+                    <br>
+                {% endif %}
+
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+
+{% endblock %}
